@@ -20,7 +20,7 @@ class preprocess_args:
 
 def preprocess(args_instance):
     args = args_instance
-    
+
     # load source chemical reaction dataset
     # The data are augmented reaction data.
     # The original data is placed in even index and the corresponding augmented data is placed in the next index.
@@ -96,8 +96,6 @@ def preprocess(args_instance):
         "valid_index": valid_index,
         "test_index": test_index,
     }
-
-    #check_dir(args.save_dir)
 
     # save the data, feat_dict, index_dict at the save_dir with pickle format. (.pkl)
     with open(os.path.join(args.save_dir, "train_data.pkl"), "wb") as f:

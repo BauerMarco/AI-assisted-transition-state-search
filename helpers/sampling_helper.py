@@ -229,8 +229,6 @@ def sample(sampler_instance):
                         data.pos_gen = pos_gen_traj_[:, mask]
                     else:
                         data.pos_gen = pos_gen[mask]
-                    print(pos_gen)
-                    print(data.smiles)
 
                     data = data.to("cpu")
                     results.append(data)
@@ -246,11 +244,6 @@ def sample(sampler_instance):
                 logger.warning("Retrying with clipping thresh 20.")
 
     os.system(f"rm {save_path}")
-    #save_path = os.path.join(log_dir, "samples_all.pkl")
-    #logger.info("Saving samples to: %s" % save_path)
-
-    #with open(save_path, "wb") as f:
-    #    pickle.dump(results, f)
 
     for i, res in enumerate(results):
         symbols = smarts_to_symbols_ordered(res.smiles)
