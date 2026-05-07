@@ -279,4 +279,3 @@ dependencies:
       - typing-extensions==4.3.0
       - urllib3==1.26.12
       - wandb==0.13.4
-prefix: /home/marco/miniconda3/envs/cu102_tsdiff

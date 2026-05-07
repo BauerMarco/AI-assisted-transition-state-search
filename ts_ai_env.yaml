@@ -250,4 +250,3 @@ dependencies:
   - zlib=1.3.1=hb25bd0a_0
   - zlib-ng=2.3.3=hceb46e0_1
   - zstd=1.5.7=hb78ec9c_6
-prefix: /home/marco/miniconda3/envs/tsdiff_notebook
