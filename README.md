@@ -22,8 +22,8 @@ This environment contains a lot of dependencies of which some are quite old. For
 
 ```
 pip install torch torchvision torchaudio
-pip install torchani ase py3Dmol jupyter
-conda install xtb-python -c conda-forge
+pip install torchani ase jupyter
+conda install xtb-python py3dmol -c conda-forge
 ```
 
 If you don't have an nvidia GPU, you obviously don't need to install the corresponding cuda extensions.
