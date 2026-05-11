@@ -1,5 +1,4 @@
 name: main_env
-name: tsdiff_intro
 
 channels:
   - conda-forge
