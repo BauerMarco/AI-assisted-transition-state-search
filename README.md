@@ -12,13 +12,13 @@ and export it to your PYTHONPATH, e.g.
 export PYTHONPATH=$PYTHONPATH:/home/usr/tsdiff
 ```
 
-then create your conda environment as shown [here](https://github.com/seonghann/tsdiff) and install py3Dmol as
+then create your conda environment either via the yml, or as shown [here](https://github.com/seonghann/tsdiff) and install py3Dmol as
 
 ```
 conda install py3dmol -c conda-forge
 ```
 
-This environment contains a lot of dependencies of which some are quite old. For smooth execution this course is therefore split into two notebooks, and you will have to set up a different environment for the introductory notebook as follows
+This environment contains a lot of dependencies of which some are quite old and will only work on linux systems, including lightweight versions like WSL. For smooth execution this course is therefore split into two notebooks, and you will have to set up a different environment for the main notebook, either via one of the two main yml files, or in case of runtime errors when resolving the environment as follows
 
 ```
 pip install torch torchvision torchaudio
@@ -26,6 +26,6 @@ pip install torchani ase jupyter
 conda install xtb-python py3dmol -c conda-forge
 ```
 
-If you don't have an nvidia GPU, you obviously don't need to install the corresponding cuda extensions.
+If you don't have an nvidia GPU, you obviously don't need to install the corresponding cuda extensions. This part is obviously operating system agnostic.
 
 Beware, that due to the pretrained models, the repo is rather large.
